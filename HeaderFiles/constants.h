@@ -1,0 +1,61 @@
+#define PULSE_THRESHOLD 4
+
+//amount of 38kHz pulses in 9ms
+#define SYNC_AMOUNT_PULSES 342
+#define SYNC_WAIT_PULSES 171
+#define SYNC_AMOUNT_THRESHOLD 15
+
+//amound of pulses at the start of a bit
+#define BIT_AMOUNT_PULSES 21
+#define BIT_0_AMOUNT_PULSES 21
+#define BIT_1_AMOUNT_PULSES 63
+#define BIT_AMOUNT_THRESHOLD 3
+
+#define SYNC_REPEAT_WAIT_FIRST_PULSES 1539
+#define SYNC_REPEAT_WAIT_PULSES 3655
+
+#define BIT_LENGTH_0 2250
+#define BIT_LENGTH_0_HALF = 1125
+#define BIT_LENGTH_1 3375
+#define BIT_LENGTH_1_HALF = 2812
+#define BIT_LENGTH_THRESHOLD 600
+
+#define SYNC_LENGTH 10125
+#define SYNC_LENGTH_THRESHOLD 3000
+
+//Macro's debug_LCD
+#define ADRESS 8
+#define COMPLEMENTADRESS 16
+#define COMMAND 24
+#define MAXBIT 32
+//#define DEBUG 1
+//#define DEBUG2 1
+
+#define READ_BIT 6
+
+#define INTERRUPT_TIMER TCNT1
+#define BIT_TIMER TCNT3
+
+#define UP_BUTTON ((PINE & _BV(PE7)))
+#define SELECT_BUTTON ((PINC & _BV(PC7)))
+#define DOWN_BUTTON ((PINE & _BV(PE5)))
+
+#define SAVE_BUTTON ((PINE & _BV(PE6)))
+#define EDIT_BUTTON ((PINE & _BV(PE4)))
+
+#define UI_DELAY 100
+#define AMOUNT_NODES 20
+
+#define UI_EDIT_REFRESH 7000
+
+#define NAME_LENGTH 15
+
+#define BUFFER_RESET 25000
+#define BUFFER_TRESH 50
+
+#define LENGTH_64 140
+#define LENGTH_64_TRESH 200
+#define BYTE_LENGTH 8
+
+#define MAX_BUFFER 73
+#define NEC_LENGTH 32
